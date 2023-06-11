@@ -2,7 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@font-face {
+	font-family: 'MADE-Sunflower';
+	src: url('../assets/fonts/MADE-Sunflower.otf')
+	format('opentype');
+	font-style: 'normal';
+}
+
+@font-face {
+	font-family: 'MADE-Evolve-bold';
+	src: url('../assets/fonts/MADE-Evolve-Sans-Bold.otf')
+	format('opentype');
+	font-style: 'bold';
+}
+
+@font-face {
+	font-family: 'MADE-Evolve-light';
+	src: url('../assets/fonts/MADE-Evolve-Sans-Light.otf')
+	format('opentype');
+	font-style: 'light';
+}
+
+@font-face {
+	font-family: 'MADE-Evolve-medium';
+	src: url('../assets/fonts/MADE-Evolve-Sans-Medium.otf')
+	format('opentype');
+	font-style: 'medium';
+}
+
+@font-face {
+	font-family: 'MADE-Evolve-regular';
+	src: url('../assets/fonts/MADE-Evolve-Sans-Regular.otf')
+	format('opentype');
+	font-style: 'regular';
+}
+
+@font-face {
+	font-family: 'MADE-Evolve-thin';
+	src: url('../assets/fonts/MADE-Evolve-Sans-thin.otf')
+	format('opentype');
+	font-style: 'thin';
+}
+
+@layer base {
+  h1{
+    font-family: "MADE-Sunflower", serif;
+    font-size: 1.875rem;
+    margin-bottom: 1%;
+  }
+
+  h2{
+    font-family: "MADE-Evolve-bold", sans-serif;
+    font-style: 'bold';
+    font-size: 1.2rem;
+    color: #161616;
+  }
+
+  h3{
+    font-family: "MADE-Evolve-medium", sans-serif;
+    font-style: 'medium';
+    font-size: 1rem;
+  }
+
+  h4{
+    font-family: "MADE-Evolve-Regular";
+    font-style: 'regular';
+    font-size: 0.75rem;
+  }
+
+  p{
+    font-family: "MADE-Evolve-Regular", sans-serif;
+    font-style: 'regular';
+    font-size: 1rem;
+  }
+
+  .label{
+    font-family: "MADE-Evolve-Regular", sans-serif;
+    font-style: 'regular';
+    font-size: 1rem;
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +105,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
